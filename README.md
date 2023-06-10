@@ -7,13 +7,13 @@ This library provides an easy-to-use interface for interacting with Discord's OA
 First, install the library via npm:
 
 ```
-npm install discord-oauth-library
+npm install ts-oauth2-discord
 ```
 
 Then, use the `OAuth` class as follows:
 
 ```typescript
-import { OAuth, OAuthOptions } from "discord-oauth-library";
+import { OAuth, OAuthOptions } from "ts-oauth2-discord";
 
 // Define your OAuth options
 const options: OAuthOptions = {
