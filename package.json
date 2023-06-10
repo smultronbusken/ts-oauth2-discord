@@ -1,6 +1,6 @@
 {
   "name": "ts-oauth2-discord",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides a user-friendly interface for interacting with Discord's OAuth2 endpoints.",
   "main": "main.js",
   "files": [
