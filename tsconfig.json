@@ -1,0 +1,23 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+      "target": "esnext",
+      "lib": ["esnext", "dom"],
+      "composite": true,
+      "declaration": true,
+      "declarationMap": true,
+      //"downlevelIteration": true,
+      "esModuleInterop": true,
+      //"resolveJsonModule": true,
+      //"useDefineForClassFields": true,
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "noImplicitAny": true, //
+  }
+  
+}
