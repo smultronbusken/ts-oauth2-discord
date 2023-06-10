@@ -27,7 +27,7 @@
   ],
   "repository": {
   "type": "git",
-  "url": "git+https://github.com/smultronbusken/ts-oauth2-discord.djs.git"
+  "url": "git+https://github.com/smultronbusken/ts-oauth2-discord.git"
   },
   "author": "smultron",
   "bugs": {
