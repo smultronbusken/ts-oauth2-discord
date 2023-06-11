@@ -36,7 +36,7 @@ export class OAuth {
   rest: REST;
 
   // Discord API version
-  public static VERSION: string = "v10";
+  public static VERSION: string = "10";
 
   constructor(options: OAuthOptions) {
     this.rest = new REST({ version: OAuth.VERSION }).setToken(options.token);
@@ -116,7 +116,9 @@ export class OAuth {
     let params = new URLSearchParams(input);
     // Use fetch because discordjs REST doesnt allow Basic Authorization
     let res = await fetch(
-      "https://discord.com/api/" + OAuth.VERSION + Routes.oauth2TokenExchange(),
+      "https://discord.com/api/v" +
+        OAuth.VERSION +
+        Routes.oauth2TokenExchange(),
       {
         method: "POST",
         body: params,
@@ -140,7 +142,7 @@ export class OAuth {
   async revokeToken(token: string): Promise<RESTPostOAuth2RefreshTokenResult> {
     // Use fetch because discordjs REST doesnt allow Basic Authorization
     let res = await fetch(
-      "https://discord.com/api/" +
+      "https://discord.com/api/v" +
         OAuth.VERSION +
         Routes.oauth2TokenRevocation(),
       {
