@@ -40,6 +40,10 @@ The `OAuth` class provides the following methods:
 
 Please refer to the official [Discord OAuth2 documentation](https://discord.com/developers/docs/topics/oauth2) for further details on each operation.
 
+## Features
+
+- Support for https://discord.com/developers/docs/topics/oauth2#webhooks
+
 ## License
 
 [MIT](LICENSE)
